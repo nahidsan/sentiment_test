@@ -23,7 +23,16 @@ The data folder contains tweet IDs corresponding to severities of depression col
 * Go to the Scripts directory:
 ```cd Scripts```
 
-* Train stand-alone model (BERT-base-uncased) with GPU support:
-```python train.py```
+* Train stand-alone model (ALBERT-base-uncased) with GPU support:
+```python train.py --pretrained_model "albert-base-v2" --epochs 10```
+
+
+Information regarding other training parameters can be found at `Scripts/common.py file.`
+
+Fine-tuned models will be saved at `../Models/` folder.
+
+Evaluation output files will be saved at `../Output/` folder.
+
+Figures will be saved at `../Figures/` folder.
 
 
