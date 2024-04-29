@@ -23,7 +23,7 @@ The data folder contains tweet IDs corresponding to severities of depression col
 * Go to the Scripts directory:
 ```cd Scripts```
 
-* Train stand-alone model (ALBERT-base-uncased) with GPU support:
+* Train stand-alone model (ALBERT-base-v2) with GPU support:
 ```python train.py --pretrained_model "albert-base-v2" --epochs 10```
 
 
