@@ -143,7 +143,8 @@ class AlbertFGBC(nn.Module): # Below lines newly added
         super().__init__()
         self.Albert = AlbertModel.from_pretrained(pretrained_model)
         self.drop1 = nn.Dropout(args.dropout)
-        self.linear = nn.Linear(args.roberta_hidden, 64)
+        #self.linear = nn.Linear(args.roberta_hidden, 64) #removed to test if it works
+        self.linear = nn.Linear(args.albert_hidden, 64)
         self.batch_norm = nn.LayerNorm(64)
         self.drop2 = nn.Dropout(args.dropout)
         self.out = nn.Linear(64, args.classes)
